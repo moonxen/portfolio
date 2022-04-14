@@ -67,7 +67,7 @@ export default function Welcome() {
     const mdDown = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-      <Grid container justify="end" alignItems="center" className={classes.cont}>
+      <Grid container justify="center" alignItems="center" className={classes.cont}>
           <Grid item xs={12} lg={6}>
               <Typography variant={mdDown ? "h2" : "h1"} style={{fontWeight:"bold"}}>
                   {welcome.title}
@@ -105,13 +105,13 @@ export default function Welcome() {
                           theme.palette.type === "light" ? <Image
                           src="/welcome.svg"
                           alt="welcome"
-                          width="900.94"
-                          height="787"
+                          width="900"
+                          height="600"
                           /> : <Image
                               src="/welcome2.svg"
                               alt="welcome"
-                              width="900.94"
-                              height="787"
+                              width="900"
+                              height="600"
                           />
                       }
                   </Grid>
