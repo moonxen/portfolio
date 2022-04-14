@@ -1,6 +1,6 @@
 import React, {useCallback} from "react";
 import {
-  AppBar,
+  AppBar, Box, Container,
   IconButton,
   makeStyles,
   Toolbar,
@@ -12,19 +12,17 @@ import {
 import {lightTheme, darkTheme} from "../themes";
 import { Brightness4, Brightness7 } from '@material-ui/icons';
 import data from '../data.json';
+import Welcome from "../components/Welcome";
 
 const { name } = data
 
 
-
-
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   appBar: {
     boxShadow: "none",
-    backgroundColor: "transparent",
   }
 }))
 
@@ -37,7 +35,6 @@ export default function Home({setTheme}) {
 
   const toggleTheme = useCallback(() => {
     setTheme(theme => theme.palette.type === 'dark' ? lightTheme : darkTheme)
-    console.log(theme.palette.type)
   }, [setTheme])
 
 
@@ -45,7 +42,7 @@ export default function Home({setTheme}) {
     <div className={classes.root}>
       <AppBar color={!trigger ? "transparent" : "inherit"} className={classes.appBar} position="fixed">
         <Toolbar>
-          <Typography variant="h6" className={classes.root}>
+          <Typography variant="h5" className={classes.root}>
             {name}
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
@@ -53,6 +50,10 @@ export default function Home({setTheme}) {
           </IconButton>
         </Toolbar>
       </AppBar>
+      <Toolbar className={classes.root} />
+      <Container >
+        <Welcome/>
+      </Container>
     </div>
   )
 }

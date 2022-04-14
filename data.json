@@ -1,5 +1,38 @@
 {
+
   "name": "Oğuzhan BALTA",
+  "welcome": {
+    "title": "Hi, I'm Oguzhan",
+    "subtitles": [
+      "Full-stack developer 🌐",
+      "Web developer 💻",
+      "Mobile developer 📱",
+      "Cross-platform developer 📱💻",
+      "Just getting started 📈"
+    ],
+    "contactAddress": [
+      {
+        "alt": "Linkedin",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/oguzhanbaltaa/"
+      },
+      {
+        "alt": "Github",
+        "icon": "github",
+        "link": "https://github.com/oguzhanabalta"
+      },
+      {
+        "alt": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/oguzhannbalta"
+      },
+      {
+        "alt": "Email",
+        "icon": "gmail",
+        "link": "mailto:oguzhanbalta99@gmail.com"
+      }
+    ]
+  },
   "theme": {
     "light": {
       "palette": {
