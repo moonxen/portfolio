@@ -13,6 +13,7 @@ import {lightTheme, darkTheme} from "../themes";
 import {Brightness4, Brightness7, KeyboardArrowUp} from '@material-ui/icons';
 import data from '../data.json';
 import Welcome from "../components/Welcome";
+import Skills from "../components/Skills";
 
 const { name } = data
 const useStyles = makeStyles(theme => ({
@@ -102,8 +103,7 @@ export default function Home({setTheme, props}) {
         <Toolbar id="back-to-top-anchor"/>
         <Container >
           <Welcome/>
-          <Welcome/>
-          <Welcome/>
+          <Skills/>
         </Container>
       </div>
         <ScrollTop {...props}>
