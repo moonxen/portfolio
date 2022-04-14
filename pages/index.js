@@ -11,6 +11,10 @@ import {
 
 import {lightTheme, darkTheme} from "../themes";
 import { Brightness4, Brightness7 } from '@material-ui/icons';
+import data from '../data.json';
+
+const { name } = data
+
 
 
 
@@ -20,6 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     boxShadow: "none",
+    backgroundColor: "transparent",
   }
 }))
 
@@ -35,7 +40,6 @@ export default function Home({setTheme}) {
     console.log(theme.palette.type)
   }, [setTheme])
 
-  const name="Oğuzhan BALTA";
 
   return (
     <div className={classes.root}>

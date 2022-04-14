@@ -1,6 +1,10 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
+import data from '../data.json';
+
+const { name } = data
+
 
 export default class MyDocument extends Document {
     render() {
@@ -10,14 +14,12 @@ export default class MyDocument extends Document {
                     <meta charSet='utf-8' />
                     {/* PWA primary color */}
                     <meta name="theme-color" content="black" />
-                    <meta name="description" content={`Portfolio of Oğuzhan`}/>
-                    <meta name='keywords' content={'Portfolio ' + "Oğuzhan" + ' skills projects experience resume'} />
-                    <link
-                        rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                    />
-                    <title>Oğuzhan Balta</title>
-
+                    <meta name="description" content={`Portfolio of ${name}`}/>
+                    <meta name='keywords' content={'Portfolio ' + name + ' skills projects experience resume'} />
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap"
+                            rel="stylesheet"></link>
+                    <title>{name}</title>
                 </Head>
                 <body>
                 <Main />
