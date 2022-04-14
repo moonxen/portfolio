@@ -33,6 +33,47 @@
       }
     ]
   },
+  "skills": {
+    "Languages known": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "TypeScript",
+      "C#",
+      "C"
+    ],
+    "Frontend": [
+      "React",
+      "Redux",
+      "Next.js",
+      "Netlify",
+      "Vercel",
+      "Material-UI",
+      "Bootstrap"
+    ],
+    "Backend, Database and Cloud": [
+      "Node.js",
+      "Express",
+      "FastAPI",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      {
+        "alt": "Azure",
+        "icon": "microsoftazure"
+      },
+      "Firebase"
+    ],
+    "Mobile": [
+      {
+        "alt": "React_Native",
+        "icon": "react",
+        "backgroundColor": "#424242"
+      },
+      "Expo",
+      "Android"
+    ]
+  },
   "theme": {
     "light": {
       "palette": {

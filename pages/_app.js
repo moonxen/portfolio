@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { MuiThemeProvider, useMediaQuery, CssBaseline } from '@material-ui/core';
 import {darkTheme, lightTheme} from "../themes";
 import PropTypes from 'prop-types';
+import Head from "next/head";
 
 
 
@@ -25,10 +26,17 @@ export default function MyApp({ Component, pageProps }) {
     }, []);
 
     return (
-      <MuiThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps}  setTheme={setTheme}/>
-      </MuiThemeProvider>
+        <>
+            <Head>
+                <title>Oğuzhan Balta</title>
+                <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+            </Head>
+            <MuiThemeProvider theme={theme}>
+                <CssBaseline />
+                <Component {...pageProps}  setTheme={setTheme}/>
+            </MuiThemeProvider>
+        </>
+
 
 
   )
