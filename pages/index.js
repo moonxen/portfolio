@@ -14,6 +14,8 @@ import {Brightness4, Brightness7, KeyboardArrowUp} from '@material-ui/icons';
 import data from '../data.json';
 import Welcome from "../components/Welcome";
 import Skills from "../components/Skills";
+import About from "../components/About";
+import Experience from "../components/Experience";
 
 const { name } = data
 const useStyles = makeStyles(theme => ({
@@ -104,6 +106,8 @@ export default function Home({setTheme, props}) {
         <Container >
           <Welcome/>
           <Skills/>
+          <Experience/>
+          <About/>
         </Container>
       </div>
         <ScrollTop {...props}>

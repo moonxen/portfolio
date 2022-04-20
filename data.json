@@ -1,5 +1,4 @@
 {
-
   "name": "Oğuzhan BALTA",
   "welcome": {
     "title": "Hi, I'm Oguzhan",
@@ -72,6 +71,74 @@
       },
       "Expo",
       "Android"
+    ]
+  },
+  "projects": {
+    "baseURI": "https://api.github.com/repos/oguzhanabalta/",
+    "repositories": [
+      "netflix-clone",
+      "twitter-clone",
+      "next-zugostore",
+      "kanKardesim-mobile-app"
+    ]
+  },
+  "experience": {
+    "Work Experience": [
+      {
+        "organization": "Bitsody",
+        "role": "Software Developer",
+        "type": "Internship",
+        "startDate": "2022-02-01",
+        "endDate": "",
+        "city": "Ankara",
+        "state": "Söğütözü",
+        "country": "Türkiye",
+        "url": "https://www.linkedin.com/company/bitsody/",
+        "thumbnail": "/bitsody.jpg"
+      },
+      {
+        "organization": "Bitsody",
+        "role": "Software Developer",
+        "type": "Internship",
+        "startDate": "2021-07-01",
+        "endDate": "2021-10-01",
+        "city": "Ankara",
+        "state": "Söğütözü",
+        "country": "Türkiye",
+        "url": "https://www.linkedin.com/company/bitsody/",
+        "thumbnail": "/bitsody.jpg"
+      }
+
+    ],
+    "Volunteer Experience": [
+      {
+        "organization": "Bilim ve Teknoloji Topluluğu",
+        "role": "Yönetim Kurulu Üyesi",
+        "type": "Volunteer",
+        "startDate": "2019-05-01",
+        "endDate": "2021-12-01",
+        "city": "Muğla",
+        "state": "Kötekli",
+        "country": "Türkiye",
+        "url": "https://www.linkedin.com/company/bilim-ve-teknoloji-topluluğu/",
+        "thumbnail": "/msku.jpg"
+      }
+    ]
+  },
+  "about": {
+    "description": "I am a full-fledged cross-platform application developer. I'm trying to make meaningful apps with UI best practices.\nI am a 4th year undergraduate student at Mugla Sitki Kocman University. I'm in the information systems engineering department.",
+    "picture": "/profile.jpg",
+    "social": [
+      {
+        "alt": "Instagram",
+        "icon": "instagram",
+        "link": "https://www.instagram.com/oguzhanbaltaa/"
+      },
+      {
+        "alt": "Twitter",
+        "icon": "twitter",
+        "link": "https://twitter.com/oguzhannbalta"
+      }
     ]
   },
   "theme": {

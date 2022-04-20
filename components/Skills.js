@@ -48,7 +48,8 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         height: theme.spacing(7),
         width: theme.spacing(7),
-        padding: theme.spacing(1.5)
+        padding: theme.spacing(1.5),
+        borderRadius:theme.spacing(8)
     },
     ...iobj
 }))
